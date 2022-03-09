@@ -1,0 +1,27 @@
+version: "3.9"
+services:
+  api:
+    build: 
+      context: ./server
+    volumes:
+      - ./server:/usr/src/app
+    ports:
+      - 8000:8000
+  client:
+    build:
+      context: ./wave
+    ports:
+      - "10101:445"
+    environment:
+      - H2O_WAVE_PORT=:445
+  app:
+    build:
+      context: .
+    environment:
+      - H2O_WAVE_APP_ADDRESS=http://app:8000
+      - H2O_WAVE_ADDRESS=http://client:445
+    stdin_open: true
+    tty: true
+    depends_on: 
+      - api
+      - client
