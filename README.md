@@ -1,9 +1,10 @@
 # khang-1330
 
 Instruction
-  >cd ner
-  
-  >docker-compose up
+  ```bash
+  cd ner
+  docker-compose up
+  ```
   
   [Website Link](http://localhost:10101/)
 
