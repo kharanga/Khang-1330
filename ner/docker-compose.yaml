@@ -20,7 +20,6 @@ services:
     environment:
       - H2O_WAVE_APP_ADDRESS=http://app:8000
       - H2O_WAVE_ADDRESS=http://server:445
-    stdin_open: true
     depends_on: 
       - api
       - client
