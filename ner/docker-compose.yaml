@@ -22,4 +22,4 @@ services:
       - H2O_WAVE_ADDRESS=http://server:445
     depends_on: 
       - api
-      - client
+      - server
