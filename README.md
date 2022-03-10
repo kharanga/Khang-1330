@@ -5,7 +5,7 @@ Instruction
   
   >docker-compose up
   
-  [Visit the web](http://localhost:10101/)
+  [Website Link](http://localhost:10101/)
 
 Demo
 https://drive.google.com/file/d/1D8GY-T5DN5k8E1nPdqbarvIHvWCw3v5G/view?usp=sharing
